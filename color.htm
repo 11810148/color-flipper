@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="color.css">
 </head>
 <body>
-    <h1>Color Flipper</h1>
-     <p id="p"></p>
+    <h1>Color Flipper:-</h1>
+     <!-- <p id="p"></p> -->
     <div id="id1">
+        <p id="p"></p>
 <button type="submit" id="res" onclick="xyz();">Color flipping</button>
 <!-- <input   type="submit" value="change Color " id="button" > -->
 
@@ -21,13 +22,13 @@
 function xyz(){
     var y=document.getElementById('id1');
     var z=document.getElementById('res');
-    var color=['violet','white','red','blue','lightgray','darkgray','blue','dark-blue','#000000','aqua'];
-    var x=Math.floor(Math.random()*10);
+    var color=['violet','white','red','blue','lightgray','darkgray','blue','dark-blue','#000000','aqua','orange','chartreuse',"darkred",'darkorange'];
+    var x=Math.floor(Math.random()*15);
 y.style.backgroundColor=color.at(x);
-z.style.color=color.at(x);
+z.style.backgroundColor=color.at(x);
 var k=document.getElementById('p');
 k.style.color=color.at(x);
-k.innerHTML=`Background-color is ${color.at(x)}`;
+k.innerHTML=`Background-color : ${color.at(x)}`;
 
 }
 
